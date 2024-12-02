@@ -28,19 +28,21 @@ header{
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    height: 20px;
-    
+    height: 20px; 
     justify-content: center;
     align-items: center;
     /* height: auto;
     width: auto; */
 }
+
 /* DOWNLOAD CARD */
 .download-card{
     flex-direction: column;
     gap: 10px;
     align-items: center;
     padding: 10%;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
     /* height: 350px; */
 }
 
