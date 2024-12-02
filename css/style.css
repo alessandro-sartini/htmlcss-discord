@@ -70,23 +70,12 @@ p{
 }
 
 
-/* .text-container {
-    text-align: center;
-    width: 60%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--blue-discord);
-    color: white;
-} */
-
 .container-80 {
     width: 80%;
     margin: 0 auto;
 }
 
-main section {
-    padding: 50px 0;
-}
+
 
 main section:nth-child(even) {
     background-color: var(--card1);
@@ -134,7 +123,21 @@ main section:last-child button {
     border: none;
     cursor: pointer;
 }
+.bg-grey{
+    background-color: var(--card1);
+}
+.wave{
+    height: 100px;
+    background-image: url(../img/wave.svg);
+    background-repeat: repeat;
 
+}
+.wave-white{
+    height: 100px;
+    background-image: url(../img/wave-white.svg);
+    background-repeat: repeat;
+
+}
 
 /* FINAL CARD */
 .final-card{
@@ -227,11 +230,6 @@ figure.small{
 /* style */
 :root{
     --black-discord:#23272A;
-    --b5:#7CDFF2;
-    --b1:#B2F8F0;
-    --b2:#F0F7F7;
-    --b3:#F7D5E1;
-    --b4:#EE97C2;
     --card1:#F6F6F6;
     --white-discord:#FFFFFF;
     --blue-discord:#255EE9;
