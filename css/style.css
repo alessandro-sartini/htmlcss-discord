@@ -2,9 +2,10 @@
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 .wrap{
-    flex-wrap: wrap;
+    
 }
 a{
     text-decoration: none;
@@ -52,7 +53,6 @@ header{
 h1, h2{   
     margin: 0 auto;
     text-align: center;
-   
     width: 400px;
     
 }
@@ -62,7 +62,10 @@ p{
     width: 400px;
     text-align: center;
     margin: 0 auto;
-  align-self: flex-end;
+    align-self: flex-end;
+}
+.text-star{
+    background-image: url(../img/stars.svg);
 }
 
 .btn-container{
@@ -71,6 +74,7 @@ p{
 
 
 .container-80 {
+    padding: 30px;
     width: 80%;
     margin: 0 auto;
 }
@@ -134,7 +138,7 @@ main section:last-child button {
 }
 .wave-white{
     height: 100px;
-    background-image: url(../img/wave-white.svg);
+    background-image: url(../img/bottom.svg);
     background-repeat: repeat;
 
 }
@@ -162,17 +166,37 @@ footer{
     align-items: flex-start;
 }
 .side-card{
+  flex-direction: column;
+    width: 600px;
+    height: 400px;
     /* height: 150px; */
     width: calc(20% - 20px);
     /* min-width: 200px; */
     /* aspect-ratio: 1.5;  */
-    gap: 10px;   
+    gap: 10px; 
+      
 
 }
+.side-card >span img{
+   
+    height: 40%;
+}
+.side-card >span {
+   
+  justify-content: center;
+}
 h3, span {
-    height: 40px; 
+   
     display: block; 
-    margin-bottom: 10px;
+    
+}
+
+span{
+    
+    height: 40px;
+}
+h3{
+    padding-bottom: 20px;
 }
 
 figure.small{
