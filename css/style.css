@@ -109,8 +109,6 @@ main section:last-child h2 {
 }
 
 main section:last-child figure {
-    width: 200px;
-    height: 200px;
     background-color: grey;
     margin: 20px 0;
 }
