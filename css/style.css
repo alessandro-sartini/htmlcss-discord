@@ -14,14 +14,15 @@ a{
 
 /* HEADER */
 header{
-    height: 40px;
+    height: 60px;
     justify-content: space-around;
     padding: 10px;
 }
 
 .nav-bar{
+    padding-top: 10px;
     justify-content: space-between;
-    width:300px;
+    /* width:300px; */
 }
 
 .btn-logo {
@@ -45,30 +46,38 @@ header{
     background-size: cover;
     /* height: 350px; */
 }
+.download-card >p{
+    max-width: 40%;
+}
+h1, h2{   
+    margin: 0 auto;
+    text-align: center;
+   
+    width: 400px;
+    
+}
 
-h1, h2{
-    
-    width: 400px;
-    height: 40px;
-    
-}
-p{ 
-    width: 400px;
+p{  
     height: 100px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  align-self: flex-end;
 }
+
 .btn-container{
     gap: 10px;
 }
 
 
-.text-container {
+/* .text-container {
     text-align: center;
     width: 60%;
     margin: 20px auto;
     padding: 20px;
     background-color: var(--blue-discord);
     color: white;
-}
+} */
 
 .container-80 {
     width: 80%;
@@ -93,6 +102,11 @@ main section:nth-child(even) {
     flex-basis: 40%;
     min-height: 300px;
     background-color: lightblue;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50%;
+
+     
 }
 
 main section:last-child .container-80 {
