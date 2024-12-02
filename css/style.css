@@ -4,9 +4,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-.wrap{
-    
-}
+
 a{
     text-decoration: none;
 }
@@ -50,6 +48,10 @@ header{
 .download-card >p{
     max-width: 40%;
 }
+.download-card>h1,
+.white{
+    color: white;
+}
 h1, h2{   
     margin: 0 auto;
     text-align: center;
@@ -57,20 +59,41 @@ h1, h2{
     
 }
 
-p{  
-    height: 100px;
-    width: 400px;
-    text-align: center;
-    margin: 0 auto;
-    align-self: flex-end;
-}
-.text-star{
-    background-image: url(../img/stars.svg);
-}
 
+.text-star{
+    width: 600px;
+    height: 100px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+    
+}
+.btn {
+    font-variant: none;
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px; 
+    border-radius:50px;
+    cursor: pointer;
+    font-size: large;
+}
+.btn.black{
+    background-color: #0a0a0a;
+    color:  #FFFFFF
+}
+.btn.white{
+    background-color: #FFFFFF;
+    color: #0a0a0a;
+}
+.btn.blue-discord{
+    background-color: var(--btn-discord);
+}
 .btn-container{
     gap: 10px;
 }
+
 
 
 .container-80 {
@@ -88,13 +111,12 @@ main section:nth-child(even) {
 .flex-basis-60 {
     flex-basis: 60%;
     min-height: 300px;
-    background-color: lightgray;
+   
 }
 
 .flex-basis-40 {
     flex-basis: 40%;
     min-height: 300px;
-    background-color: lightblue;
     flex-direction: column;
     justify-content: center;
     gap: 50%;
@@ -116,7 +138,6 @@ main section:last-child h2 {
 }
 
 main section:last-child figure {
-    background-color: grey;
     margin: 20px 0;
 }
 
@@ -126,6 +147,12 @@ main section:last-child button {
     color: white;
     border: none;
     cursor: pointer;
+}
+ul li:first-child{
+    color: var(--btn-discord);
+}
+ul li:not(first-child){
+    color: var(--white-discord);
 }
 .bg-grey{
     background-color: var(--card1);
@@ -192,7 +219,7 @@ h3, span {
 }
 
 span{
-    
+    color: white;
     height: 40px;
 }
 h3{
@@ -233,22 +260,15 @@ figure.small{
 }
 
 /* down-divider */
+.hr-blue-discord{
+   border:1px solid var(--btn-discord) 
+}
 .footer-buttons {
     justify-content: space-between;
     width: 100%;
 }
 
 
-.btn {
-    font-variant: none;
-    padding: 10px 20px;
-    background-color: var(--btn-discord);
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    gap: 10px;
-}
 
 
 /* style */
@@ -259,9 +279,9 @@ figure.small{
     --blue-discord:#255EE9;
     --btn-discord:#738ADA;
 }
-.download-card{
+/* .download-card{
     background-color: var(--blue-discord);
-}
+} */
 header{
     display: flex;
     background-color:var(--blue-discord);
@@ -279,6 +299,9 @@ a{
 }
 h1, h2{
     background-color: var(--b5);
+}
+h3{
+    color: var(--btn-discord);
 }
 .btn-download{
   background-color: var(--btn-discord-discord);
@@ -298,9 +321,6 @@ h3{
 }
 .items{
     background-color:var(--b1);
-}
-span{
-    background-color: var(--card1);
 }
 .small{
     background-color: var(--b4);
